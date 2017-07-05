@@ -67,3 +67,51 @@
   2.css 注释：注释格式 /*这儿是注释*/；
   3.JavaScript 注释：单行注释使用'//这儿是单行注释' ，多行注释使用 /* 这儿有多行注释 */；
 ```
+
+## Build Setup
+
+``` bash
+# 安装npm依赖
+npm install
+
+# 本地调试模式服务开启 localhost:8080
+npm run dev
+
+# 打包压缩合并代码以便发布
+npm run build
+
+# 打包到生产 and view the bundle analyzer report
+npm run build --report
+```
+想了解更多,请参考以下文档
+[webpack中文文档](https://doc.webpack-china.org/configuration/).
+[w3cSchool规范](http://www.w3school.com.cn/html5/index.asp).
+[vue中文文档](https://cn.vuejs.org/v2/api/).
+[vue-router文档](https://router.vuejs.org/zh-cn/).
+[vuex文档](https://vuex.vuejs.org/zh-cn/).
+
+##文件存放位置
+
+``` bash
+build--   构建配置文件夹
+config--  构建配置初始化文件夹
+src--     源代码文件夹
+  |--assets 静态资源文件夹
+    |--img 图片文件夹
+    |--css 样式表文件夹
+    |--js  固定引用js文件夹
+  |--components 页面所需组件文件夹
+    |--scss scss原样式文件夹
+  |--service 服务用js工具文件夹
+  |--viewPages wepapp各路由子页面文件夹
+    |--
+  App.vue 单页应用主入口页面
+  main.js 单页应用入口js文件
+static-- 无需编译直接引用资源文件夹
+.babelrc es6转es5配置文件
+.gitignore 上传git忽略文件/文件夹
+.postcssrc.js css后处理配置
+index.html 单页入口html页面
+package.json npm打包依赖文件
+README.md 工程说明文件
+```
